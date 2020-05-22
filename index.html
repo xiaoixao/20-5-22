@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul li {
+            list-style: none;
+            display: inline;
+            position: relative;
+            top: 30px;
+        }
+        
+        a {
+            position: relative;
+            left: 100px;
+        }
+        
+        ul {
+            height: 780px;
+            width: auto;
+            background-image: url(img/bg3.jpg);
+        }
+        
+        img {
+            height: 100px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            background: #fff;
+            display: inline;
+            margin: 0 0 27px 30px;
+            padding: 10px 10px 15px;
+            float: left;
+            text-align: center;
+            font-family: "楷体";
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+            /* transform: rotate(-3deg); */
+            transition: transform .15s linear;
+        }
+        
+        ul a:after {
+            content: attr(title);
+        }
+        
+        ul li:nth-child(2n+1) a {
+            transform: rotate(-3deg);
+        }
+        
+        ul li:nth-child(2) a {
+            transform: none;
+        }
+        
+        ul li:nth-child(3n) a {
+            transform: rotate(-10deg);
+        }
+        
+        ul li a:hover {
+            transform: scale(1.25);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li id="one">
+            <a href="#" title="相识"><img src="img/11.jpg" alt="1"></a>
+        </li>
+        <li>
+            <a href="#" title="凝视"><img src="img/22.jpg" alt="2"></a>
+        </li>
+        <li>
+            <a href="#" title="甜睡"><img src="img/33.jpg" alt="3"></a>
+        </li>
+        <li>
+            <a href="#" title="逗乐"><img src="img/44.jpg" alt="4"></a>
+        </li>
+        <li>
+            <a href="#" title="奔跑"><img src="img/55.jpg" alt="5"></a>
+        </li>
+        <li>
+            <a href="#" title="漠视"><img src="img/66.jpg" alt="6"></a>
+        </li>
+    </ul>
+</body>
+
+</html>
